@@ -1,0 +1,151 @@
+.espaco-texto {
+  font-size: 28px;
+  margin: 1rem 4rem 3rem;
+  color: var(--azul);
+}
+
+.espaco {
+  position: relative;
+  background-image: url('../img/klogo6.png');
+  background-repeat: no-repeat;
+  margin-right: auto;
+}
+
+/* Container base com espaçamento lateral das bordas da tela */
+.espaco-imagem {
+  display: flex;
+  width: 100%;
+  padding: 0 2rem;
+  /* Cria o recuo nas laterais para não grudar na 'parede' */
+  box-sizing: border-box;
+  /* Garante que o padding não ultrapasse a largura da tela */
+  margin-bottom: 1rem;
+  /* Espaçamento vertical entre um bloco e outro */
+}
+
+/* Tamanho da imagem */
+.espaco-imagem img {
+  width: 90%;
+  height: auto;
+}
+
+/* Alinhamentos individuais */
+.espaco-imagem.direita {
+  justify-content: flex-end;
+  /* Empurra para a direita */
+}
+
+.espaco-imagem.esquerda {
+  justify-content: flex-start;
+  /* Mantém na esquerda */
+}
+
+.espaco-imagem.esquerda img {
+  /* Canto reto no canto superior-DIREITO ou ESQUERDO */
+  /* Sintaxe: superior-esquerdo | superior-direito | inferior-direito | inferior-esquerdo */
+  border-radius: 0px 40px 40px 40px;
+
+  /* Garante o encaixe e recorte perfeito da imagem */
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.destaque {
+  color: var(--creme);
+  font-size: 28px;
+}
+
+
+/* Container do mapa */
+.espaco-mapa {
+  margin-left: auto;
+  width: 90%;
+  /* ou a largura desejada, ex: 400px */
+  height: auto;
+  /* defina a altura desejada */
+}
+
+/* O mapa interativo propriamente dito */
+.espaco-mapa iframe {
+  width: 90%;
+  height: auto;
+  border-radius: 40px 0 40px 40px;
+
+
+  /* Canto reto no canto superior-ESQUERDO (mesmo formato da imagem de baixo) */
+}
+
+.espaco-imagem video {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  /* Garante que o vídeo preencha o contêiner sem distorcer */
+
+  /* BORDAS: superior-esquerda, superior-direita, inferior-direita, inferior-esquerda */
+  border-radius: 40px 0px 40px 40px;
+
+  overflow: hidden;
+  /* Corta o conteúdo do vídeo nas curvas */
+}
+
+@supports (animation-timeline: view()) {
+
+  /* título: reaproveita o subir-suave que já criamos */
+  .espaco-texto {
+    animation: subir-suave linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 210%;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .espaco-texto {
+    text-align: center;
+    max-width: 380px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 4rem auto;
+  }
+
+  .destaque {
+    color: var(--creme);
+    font-size: 2.8rem;
+    text-align: center;
+
+  }
+
+  .espaco-imagem img,
+  .espaco-imagem video {
+    max-width: 680px;
+    /* ajuste esse valor até o tamanho que quiser */
+  }
+
+  .espaco {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .espaco-mapa {
+    max-width: 680px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* ou 4/3, ajuste até ficar parecido com a foto de cima */
+  }
+
+  .espaco-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  .espaco {
+    position: relative;
+    background-image: url('../img/klogo6.png');
+    background-position: center center;
+    background-size: 95%;
+
+  }
+
+}

@@ -1,0 +1,340 @@
+.titulo-especialidades {
+  display: flex;
+  padding: 4rem 0 2rem;
+  color: var(--azul);
+  font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.especialidades {
+  display: block;
+  background-image: url('../img/klogo3.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* Ajusta a imagem para caber sem cortar */
+
+  /* Adiciona espaço interno na parte inferior para a imagem não colar no texto */
+  padding-bottom: 4.3rem;
+}
+
+.destaque-esp {
+  color: var(--creme);
+  font-size: 25px;
+}
+
+.agenda-img {
+  display: flex;
+  width: 40%;
+  padding: 0 0 0 2.5rem;
+
+}
+
+/*.todos {}*/
+
+.dotores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catarina {
+  display: flex;
+  width: 80%;
+  height: 20%;
+  /* margin: 3rem; */
+}
+
+.dotores {
+  display: flex;
+  font-size: 20px;
+}
+
+/* .botao-especialista {
+    position: absolute;
+    color: var(--branco);
+    background-color: var(--azul);
+    border-radius: 1px 15px 15px;
+    text-decoration: none;
+    margin-top: 20rem;
+    margin-left: .8rem;
+    padding: 1rem 1rem;
+    text-decoration: none
+} */
+
+
+/* Container do Nome */
+.nome-med {
+  position: absolute;
+  top: 60%;
+  /* Ajusta a posição vertical na área verde */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nomed {
+  font-size: 22px;
+  color: var(--cinza);
+  margin: 1rem;
+  /* Remove margens padrão que empurram outros elementos */
+}
+
+.nomede {
+  margin-top: -1rem;
+  color: var(--azul);
+}
+
+
+
+.botao-especialista {
+  display: block;
+  width: fit-content;
+  margin: 5rem auto;
+  padding: 15px 20px;
+  /* Aumentei o espaçamento lateral para o texto respirar melhor */
+  background-color: var(--azul);
+  color: var(--branco);
+  text-decoration: none;
+  border-radius: 1px 15px 15px;
+  text-align: center;
+}
+
+
+
+.trinta {
+  width: 95vw;
+  margin-top: 3rem;
+  margin-bottom: 30px;
+  margin-left: auto;
+  /* Empurra o bloco para colar na borda direita */
+  margin-right: -5vw;
+  /* Faz o card vazante sobressair à direita, se necessário */
+  padding: 15px 9vw 22px 25px;
+  background: var(--azul);
+  color: var(--branco);
+  font-size: 15px;
+  position: relative;
+  border-radius: 1px 0 0 40px;
+  /* Arredonda os cantos da esquerda */
+}
+
+
+
+
+
+/* Garante que o container limite o fluxo horizontal */
+.especialistas.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Força cada slide a ter um tamanho fixo no mobile */
+.swiper-slide {
+  width: 280px;
+  /* Ajuste a largura do card como preferir */
+  position: relative;
+}
+
+/* Força cada slide a ter um tamanho fixo no mobile */
+
+
+/* Posicionamento do container pai para controle de sobreposição */
+.swiper-slide {
+  position: absolute;
+}
+
+.botao-confira .conteudo-expandido {
+  display: none !important;
+
+}
+
+/* Mostra apenas a palavra "CONFIRA" */
+.botao-confira .texto-btn {
+  display: inline-block !important;
+}
+
+/* Estilo base do botão fechado */
+.botao-confira {
+  position: absolute;
+  bottom: 10px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 10px 24px;
+  border-radius: 0px 20px 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 50;
+
+  width: auto;
+  max-width: max-content;
+  white-space: nowrap;
+  /* Evita que a palavra CONFIRA quebre linha */
+}
+
+
+/* ==========================================
+   ESTADO EXPANDIDO (Botão Aberto / .ativo)
+   ========================================== */
+
+/* Esconde a palavra "CONFIRA" ao abrir */
+.botao-confira.ativo .texto-btn {
+  display: none !important;
+}
+
+/* Exibe o conteúdo expansível ao abrir */
+.botao-confira.ativo .conteudo-expandido {
+  display: block !important;
+  width: 100%;
+}
+
+/* Estilo da caixa expandida */
+.botao-confira.ativo {
+  position: absolute;
+  bottom: 0px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  width: 90% !important;
+  max-width: 90% !important;
+  padding: 20px !important;
+  border-radius: 0px 35px 35px 35px;
+
+  white-space: normal;
+  /* Permite a quebra normal de linha no texto */
+  z-index: 9999 !important;
+  /* Garante que fique por cima de tudo */
+}
+
+/* Formatação do texto interno */
+.botao-confira.ativo .conteudo-expandido p {
+  margin: 0 0 10px 0;
+  color: var(--branco);
+  font-size: 0.85rem;
+  font-weight: normal;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.btn-fechar {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 10px;
+  color: var(--azul);
+}
+
+/* ---ANIMAÇÃO DIREITA--- */
+@keyframes entrar-da-direita {
+  from {
+    opacity: 0;
+    transform: translateX(60%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .trinta {
+    animation: entrar-da-direita linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 310%;
+  }
+}
+
+body {
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  body,
+  .trinta {
+    animation: none;
+  }
+}
+
+/* ------ */
+
+
+
+@keyframes subir-suave {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .titulo-especialidades {
+    animation: subir-suave linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 210%;
+  }
+
+  .especialidades .swiper-slide {
+    animation: subir-suave linear backwards;
+    animation-timeline: view();
+    animation-range: entry 100% entry 90%;
+  }
+}
+
+.especialidades.swiper {
+  width: 100%;
+  overflow: hidden;
+  overflow: clip;
+  /* adicione esta linha */
+}
+
+@media screen and (min-width: 1020px) {
+  .trinta {
+    width: 50vw;
+    margin-top: 7%;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    margin-right: -5vw;
+
+    padding: 20px 25px 25px;
+    background: var(--azul);
+    color: var(--branco);
+    font-size: 21px;
+    position: relative;
+    border-radius: 1px 0 0 40px;
+    /* Arredonda os cantos da esquerda */
+  }
+
+  .titulo-especialidades {
+
+    font-size: 40px;
+    margin: 7rem;
+  }
+
+  .destaque-esp {
+    font-size: 45px;
+  }
+
+  .especialistas .swiper-slide {
+    width: 445px;
+  }
+
+  .especialidades {
+    background-image: url('../img/klogo3.png');
+    background-size: 65%;
+  }
+
+}

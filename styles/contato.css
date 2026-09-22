@@ -1,0 +1,56 @@
+.contato {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 8rem 0 5rem;
+}
+
+.destaque-contato {
+    color: var(--creme);
+}
+
+.contato {
+    color: var(--azul);
+    margin: 5rem 1rem 2rem;
+}
+
+.final {
+    text-align: center;
+}
+
+.botao-contato {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--azul);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 0 15px 15px 15px;
+    margin: .0rem auto 5rem;
+}
+
+@supports (animation-timeline: view()) {
+
+    /* título: reaproveita o subir-suave que já criamos */
+    .contato {
+        animation: subir-suave linear backwards;
+        animation-timeline: view();
+        animation-range: entry 0% entry 210%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .contato {
+        text-align: center;
+        font-size: 2.8rem;
+        margin: 8rem 0 5rem;
+    }
+ 
+     .botao-contato {
+        margin: .1rem 0 5rem;
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+}

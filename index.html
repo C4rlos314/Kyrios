@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kyrios</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="logok" href="./img/logok.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <footer class="cabecalho">
+        <div class="logo"> <img src="./img/logoo.png" alt="logo"></div>
+        <div class="fundo">
+            <img src="img/Prancheta 1-80.jpg" class="clinica" alt="img background">
+
+            <h1 class="titulo">
+                O <span class="destaque-hero">mais completo</span> centro
+                <br class="quebra-desktop">
+                de especialidades médicas
+                <br class="quebra-desktop">
+                radiologia e ambulatório
+                <br class="quebra-desktop">
+                da região <span class="destaque-hero">da Ibiapaba</span>
+            </h1>
+            <div class="botao"><a href="https://api.whatsapp.com/send?phone=558892333533&text=Olá! Gostaria de agendar uma consulta." target="_blank">AGENDE COM NOSSA EQUIPE</a></div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="especialidades">
+        <p class="trinta texto direita">contamos com mais de 30 especialidades médicas.</p>
+
+        <h2 class="titulo-especialidades">CONHEÇA NOSSOS <span class="destaque-esp">ESPECIALISTAS</span></h2>
+
+
+        <!-- <div class="agenda">
+            <img src="./img/agenda.png" alt="agenda" class="agenda-img">
+        </div> -->
+
+        <!-- Container principal do Swiper -->
+        <div class="especialistas swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/pediatra3.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR. CATARINA</p>
+                        <p class="nomede">Pediatra</p>
+                    </div>
+                    <a id="Dr. catarina" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">pediatra</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2 (Adicione mais slides conforme necessário) -->
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/otorrino.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR. hyngridd</p>
+                        <p class="nomede">otorrinolaringologista</p>
+
+                    </div>
+                    <a id="DR. Hyngridd" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">otorrinolaringologista</p>
+                            <p class="especialidadem">05/10</p>
+
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/psqui.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR.catarine</p>
+                        <p class="nomede">Pisquiatra</p>
+                    </div>
+                    <a id="DR. Catarine" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">psiquiatra</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/elinaldo1.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR.elinaldo</p>
+                        <p class="nomede">ginecologista & obstetra</p>
+                    </div>
+                    <a id="Dr. Elinaldo" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">ginecologista & obstetra</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/pneumo.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR. alex rodrigues</p>
+                        <p class="nomede">pneumologista</p>
+                    </div>
+                    <a id="DR.alex rodrigues" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">pneumologista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/neuro.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR. igor tavares</p>
+                        <p class="nomede">neurologista</p>
+
+                    </div>
+                    <a id="DR. igor tavares" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">neurologista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/orto.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR. wendel alcântera</p>
+                        <p class="nomede">ortopedista<br> cirurgião de joelho</p>
+
+                    </div>
+                    <a id="DR. wendel alcântera" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">ortopedista / cirurgião de joelho</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/clinico.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DR. thiago queiroz</p>
+                        <p class="nomede">clínico geral</p>
+
+                    </div>
+                    <a id="DR. thiago queiroz" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">clínico geral & ultrassonografista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/esteta.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">luanda carla oliveira</p>
+                        <p class="nomede">enfermeira esteta</p>
+
+                    </div>
+                    <a id="luanda carla oliveira" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">enfermeira esteta</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/fono.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DRa. zulnara lira</p>
+                        <p class="nomede">fonoaudiologa</p>
+
+                    </div>
+                    <a id="DRa. zulnara lira" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">fonoaudiologa</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/fisio.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">DRa. lívia barroso</p>
+                        <p class="nomede">fisioterapeuta</p>
+
+                    </div>
+                    <a id="DRa. lívia barroso" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">fisioterapeuta</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/feridas.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">nádia craveiro</p>
+                        <p class="nomede">enfermeira</p>
+
+                    </div>
+                    <a id="nádia craveiro" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">enfermeira especialista em feridas</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/endo.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. diego almeida</p>
+                        <p class="nomede">gastroenterologista<br>
+                            & endoscopista</p>
+
+                    </div>
+                    <a id="Dr. diego almeida" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">gastroenterologista & endoscopista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/cardi.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. joão paulo</p>
+                        <p class="nomede">cardiologista<br> & ecocardiografista</p>
+
+                    </div>
+                    <a id="Dr. joão paulo" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">cardiologista & ecocardiografista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/osteta.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. johnathan<br> quariguasi</p>
+                        <p class="nomede">osteopata pediátrico</p>
+                    </div>
+                    <a id="Dr. jonathan quariguasi" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">osteopata pediátrico</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/dermato.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. mário timbó</p>
+                        <p class="nomede">dermatologista</p>
+
+                    </div>
+                    <a id="Dr. mário timbó" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">dermatologista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/endoscopista.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. ernandes duarte</p>
+                        <p class="nomede">cirurgião & endoscopista</p>
+
+                    </div>
+                    <a id="Dr. ernandes duare" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">cirurgião & endoscopista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/endocrino.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. samuel aguiar</p>
+                        <p class="nomede">endocrinologista</p>
+
+                    </div>
+                    <a id="Dr. samuel aguiar" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">endocrinologista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/ortocervical.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. arthur soares</p>
+                        <p class="nomede">ortopedista especialista<br> em coluna</p>
+
+                    </div>
+                    <a id="Dr. arthur soares" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">ortopedista especialista em coluna</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/clinicogeral.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. Ewerton Uchôa</p>
+                        <p class="nomede">clínico geral</p>
+
+                    </div>
+                    <a id="Dr. Ewerton uchôa" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">clínico geral</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/ortodentista.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dra. Gemimma rego</p>
+                        <p class="nomede">dentista</p>
+
+                    </div>
+                    <a id="Dra. Gemimma rego" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">ortodentista | Implantodontista | Odontopediatra</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/reumatologista.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. Yure Azevedo</p>
+                        <p class="nomede">Reumatologista</p>
+
+                    </div>
+                    <a id="Dr. Yure Azevedo" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">Reumatologista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/saudemental.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dra. Luenda Ramos</p>
+                        <p class="nomede">Clínica Geral e<br> Saúde Mental</p>
+
+                    </div>
+                    <a id="Dra. Luenda Ramos" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">Clínica Geral e Saúde Mental</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/vascular.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. Elpidio Ribeiro</p>
+                        <p class="nomede">Cirurgião Vascular</p>
+
+                    </div>
+                    <a id="Dr. Elpidio Ribeiro" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">Cirurgião Vascular</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="dotores">
+                        <img src="./img/urologista.png" class="catarina" alt="pediatra">
+                    </div>
+                    <div class="nome-med">
+                        <p class="nomed">Dr. Mateus Araújo</p>
+                        <p class="nomede">Urologista</p>
+
+                    </div>
+                    <a id="Dr. Mateus Araújo" class="botao-confira" onclick="toggleConfira(event, this)">
+                        <span class="texto-btn">CONFIRA</span>
+                        <div class="conteudo-expandido">
+                            <p class="especialidadem">Urologista</p>
+                            <p class="especialidadem">05/10</p>
+                            <p class="especialidadem">segunda à sexta</p>
+                            <p class="especialidadem">horário: </p>
+
+                            <span class="btn-fechar">Fechar ✕</span>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=558892333533&text=Olá! Gostaria de agendar uma consulta." target="_blank" class="botao-especialista">AGENDE COM NOSSA EQUIPE</a>
+
+        <!-- Se quiser as bolinhas de paginação (opcional) -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="imagem">
+        <div class="r-imagem"><img src="./img/imagens.png" alt=""></div>
+
+        <div>
+            <div class="especialistas swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="dotores">
+                            <img src="./img/tomografia.jpg" class="quadrados" alt="TOMOGRAFIA">
+                        </div>
+                        <p class="exame-imagem">TOMOGRAFIA</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dotores">
+                            <img src="./img/raiox.jpg" class="quadrados" alt="RAIO - X">
+                        </div>
+                        <p class="exame-imagem">RAIO - X</p>
+                    </div>
+
+                    <!-- Card 2 (Adicione mais slides conforme necessário) -->
+                    <div class="swiper-slide">
+                        <div class="dotores">
+                            <img src="./img/mamo.jpg" class="quadrados" alt="MAMOGRAFIA">
+                        </div>
+                        <p class="exame-imagem">MAMOGRAFIA</p>
+                    </div>
+
+                    <!-- Card 2 (Adicione mais slides conforme necessário) -->
+                    <div class="swiper-slide">
+                        <div class="dotores">
+                            <img src="./img/ultra.jpg" class="quadrados" alt="ULTRASSONAGRAFIA">
+                        </div>
+                        <p class="exame-imagem">ULTRASSONAGRAFIA</p>
+                    </div>
+
+                    <!-- Card 2 (Adicione mais slides conforme necessário) -->
+                    <div class="swiper-slide">
+                        <div class="dotores">
+                            <img src="./img/desi.jpg" class="quadrados" alt="DESIDOMETRIA ÓSSEA">
+                        </div>
+                        <p class="exame-imagem">DESIDOMETRIA ÓSSEA</p>
+                    </div>
+                    <!-- Card 2 (Adicione mais slides conforme necessário) -->
+
+
+
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=558892333533&text=Olá! Gostaria de agendar uma consulta." target="_blank" class="botao-imagem">AGENDE COM NOSSA EQUIPE</a>
+                <!-- Se quiser as bolinhas de paginação (opcional) -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="exames">
+        <h2 class="ajuda">VEJA O QUE NÓS<br>PODEMOS LHE <span class="aju">AJUDAR</span></h2>
+
+        <!-- <ul class="exames-lista">
+            <p class="cardio">Exames Cardiológicos</p>
+            <li>Eletrocardiograma</li>
+            <li>Mapa</li>
+            <li>Holter</li>
+            <li>Teste Ergométrico</li>
+        </ul> -->
+
+        <ul class="exames-lista sem-corte">
+            <p class="cardio">Exames Cardiológicos</p>
+            <li>Eletrocardiograma</li>
+            <li>Mapa</li>
+            <li>Holter</li>
+            <li>Teste Ergométrico</li>
+        </ul>
+
+        <ul class="exames-lista ">
+            <p class="cardio">LABORATÓRIAIS</p>
+            <p class="laboratorial">Exames Laboratoriais com segurança e praticidade.</p>
+
+        </ul>
+
+        <ul class="exames-lista sem-corte">
+            <p class="cardio">clínica de vacinas</p>
+            <p class="laboratorial">imunização para todas as fases da vida.</p>
+
+        </ul>
+
+
+        <!-- <li>EXAMES DE SANGUE</li>
+        
+
+            <li>PEQUENAS CIRURGIAS</li>
+            <li>RAIO-X/TOMOGRAFIA</li>
+            <li>ECOCARDIOGRAMA</li>
+            <li>ULTRASSOM</li>
+            <li>PEQUENAS CIRURGIAS</li>
+            <li>EXAME DE IMAGEM</li> -->
+
+        </ul>
+        <!-- <div class="botao-exames"> <a href="#" >AGENDE COM NOSSA EQUIPE</a></div> -->
+    </section>
+
+
+    <section class="avaliacoes ">
+        <div>
+            <h2 class="pacientes">O QUE NOSSOS<br> <span class="destaque-pacientes">PACIENTES</span> DIZEM?</h2>
+        </div>
+        <div><img src="./img/comentario1.jpg" class="quadrados-azul-esquerdo" alt="quadrado azul"></div>
+        <div><img src="./img/comentario2.jpg" class="quadrados-azul-direito" alt="quadrado azul"></div>
+        <div><img src="./img/cometario3.jpg" class="quadrados-azul-esquerdo" alt="quadrado azul"></div>
+        <div><img src="./img/cometario3.jpg" class="quadrados-azul-esquerdo" alt="quadrado azul"></div>
+        <div><img src="./img/comentario4.jpg" class="quadrados-azul-direito" alt="quadrado azul"></div>
+        <div><img src="./img/comentario4.jpg" class="quadrados-azul-direito" alt="quadrado azul"></div>
+    </section>
+
+    <section class="espaco">
+        <h2 class="espaco-texto">UM ESPAÇO <span class="destaque">PENSADO</span> EM <span class="destaque">VOCÊ!</span>
+        </h2>
+
+        <div class="espaco-imagem direita">
+            <!-- <img src="./img/quadrado ponta.png" alt=""> -->
+            <video src="./img/espaco.mp4" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="espaco-imagem esquerda">
+            <img src="./img/kyrios.jpg" alt="">
+        </div>
+
+        <div class="espaco-mapa direita">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8072.591261316946!2d-40.75712521934985!3d-4.16121919999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794e51a97142efd%3A0xd5f92c12103e4323!2sComplexo%20de%20Sa%C3%BAde%20Kyrios!5e1!3m2!1spt-BR!2sbr!4v1789613924481!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+        </div>
+
+        <!-- <div class="espaco-imagem direita">
+            <img src="./img/quadrado ponta-baixo-esquerda.png" alt="">
+        </div> -->
+
+    </section>
+
+
+
+    <section class="final">
+        <p class="contato">ENTRE EM CONTATO<br> E <span class="destaque-contato">AGENDE</span> A SUA <span
+                class="destaque-contato">CONSULTA</span></p>
+        <div> <a href="https://api.whatsapp.com/send?phone=558892333533&text=Olá! Gostaria de agendar uma consulta." target="_blank" class="botao-contato">AGENDE COM NOSSA EQUIPE</a></div>
+    </section>
+
+    <footer class="roda">
+        <hr>
+        <p class="rodape">© 2026 Copyright - Kyrios. Todos os direitos reservados. </p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        const swiper = new Swiper('.especialistas', {
+            grabCursor: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 24,
+            breakpoints: {
+                1020: {
+                    spaceBetween: 32,
+                },
+                1440: {
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        function toggleConfira(event, elemento) {
+            event.preventDefault();
+
+            document.querySelectorAll('.botao-confira.ativo').forEach(btn => {
+                if (btn !== elemento) {
+                    btn.classList.remove('ativo');
+                }
+            });
+
+            elemento.classList.toggle('ativo');
+        }
+    </script>
+
+</body>
+
+</html>

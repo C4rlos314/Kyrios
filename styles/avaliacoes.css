@@ -1,0 +1,107 @@
+/* .avaliacoes {
+    box-sizing: border-box;
+} */
+
+.avaliacoes {
+    display: block;
+    background-image: url('../img/klogo3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* Ajusta a imagem para caber sem cortar */
+
+    /* Adiciona espaço interno na parte inferior para a imagem não colar no texto */
+    padding-bottom: 4.3rem;
+}
+
+.pacientes {
+    font-size: 28px;
+    text-align: center;
+    color: var(--azul);
+    margin: 6rem 0 3.9rem;
+    align-items: center;
+}
+
+.destaque-pacientes {
+    color: var(--creme);
+    font-size: 28px;
+}
+
+.quadrados-azul-esquerdo {
+    position: relative;
+    margin: 0 1em 3.5rem 2rem;
+    width: 80%;
+    height: 80%;
+}
+
+.quadrados-azul-direito {
+    position: relative;
+    margin: 0 1rem 3rem 2rem;
+    width: 80%;
+    height: 80%;
+}
+
+@supports (animation-timeline: view()) {
+
+    /* título: reaproveita o subir-suave que já criamos */
+    .pacientes {
+        animation: subir-suave linear backwards;
+        animation-timeline: view();
+        animation-range: entry 0% entry 210%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .pacientes {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: .5px;
+        margin-bottom: 40px;
+        color: var(--azul);
+        margin-top: 8rem;
+    }
+
+    .destaque-pacientes {
+        color: var(--creme);
+        font-size: 2.5rem;
+    }
+
+    .quadrados-azul-direito {
+        display: relative;
+        margin: 0 1em 3.5rem 2rem;
+        width: 40%;
+      
+    }
+
+    .quadrados-azul-esquerdo {
+        position: relative;
+        margin: 0 1em 3.5rem 2rem;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+  .avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    padding: 4rem 6vw;
+  }
+
+  .avaliacoes > div:first-child {
+    grid-column: 1 / -1; /* a div do título ocupa a linha toda */
+  }
+
+  .avaliacoes > div:not(:first-child) {
+    width: 90%;
+  }
+
+  .quadrados-azul-esquerdo,
+  .quadrados-azul-direito {
+    width: 100%;
+    ; /* garante que a imagem preencha o card sem distorcer */
+    border-radius: 12px;
+  }
+  
+}

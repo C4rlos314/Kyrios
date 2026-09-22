@@ -1,0 +1,202 @@
+.exames {
+  overflow-x: hidden;
+  /* impede scroll horizontal por causa do "sangramento" */
+
+  position: relative;
+  background-image: url('../img/klogo6.png');
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+}
+
+.ajuda {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .5px;
+  margin-bottom: 40px;
+  color: var(--azul);
+  margin-top: 1rem;
+}
+
+.aju {
+  color: var(--creme);
+}
+
+/* ===== CARD que sai pela borda direita ===== */
+.exames-lista {
+  margin: 0 0 30px 0;
+  padding: 30px 15vw 30px 70px;
+  /* padding-right grande empurra o conteúdo pra dentro */
+  width: 90vw;
+  /* controla o quanto o card "vaza" pra fora da tela */
+  margin-left: auto;
+  /* cola o card na direita */
+  background: var(--azul);
+  color: var(--creme);
+  position: relative;
+
+  border-radius: 28px 0 0 28px;
+  /* arredonda só o lado que fica visível */
+
+
+}
+
+.exames-lista.sem-corte li {
+  margin-bottom: 5px;
+  /* opcional, espaço entre os itens */
+}
+
+/* variante que sai pela borda ESQUERDA (segunda caixa) */
+.exames-lista.sem-corte {
+  padding: 30px 90px 30px 90px;
+  width: 90vw;
+  margin-left: 0;
+  /* cola na esquerda */
+  margin-right: auto;
+  clip-path: none;
+  border-radius: 0 28px 28px 0;
+  text-align: center;
+}
+
+
+
+
+.exames-lista .cardio {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 5px 16px 0;
+  text-align: center;
+}
+
+.laboratorial {
+  display: flex;
+  font-size: 17px;
+  text-align: center;
+  color: var(--cinza);
+  line-height: 1.5rem;
+}
+
+.exames-lista li {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.9;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--cinza);
+}
+
+.exames-lista.sem-corte .cardio,
+.exames-lista.sem-corte li {
+  text-align: center;
+}
+
+
+@keyframes vir-da-esquerda {
+  from {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes vir-da-direita {
+  from {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+
+  /* título: reaproveita o subir-suave que já criamos */
+  .ajuda {
+    animation: subir-suave linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 210%;
+  }
+
+  /* blocos 1 e 3 (esquerda) */
+  .exames-lista.sem-corte {
+    animation: vir-da-esquerda linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  /* bloco 2 (direita) */
+  .exames-lista:not(.sem-corte) {
+    animation: vir-da-direita linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ajuda,
+  .exames-lista.sem-corte,
+  .exames-lista:not(.sem-corte) {
+    animation: none;
+  }
+}
+
+.exames {
+  overflow-x: hidden;
+  overflow-x: clip;
+  /* adicione esta linha */
+
+}
+
+@media screen and (min-width: 1020px) {
+  .exames-lista.sem-corte {
+    padding: 30px 90px 30px 10vw;
+    width: 50vw;
+    margin-left: 0;
+    margin-right: auto;
+    clip-path: none;
+    border-radius: 0 28px 28px 0;
+    text-align: center;
+    list-style: left;
+  }
+
+  .exames-lista {
+    margin: 0 0 30px 0;
+    padding: 30px 15vw 30px 10vw;
+    width: 50vw;
+    margin-left: auto;
+    background: var(--azul);
+    color: var(--creme);
+    position: relative;
+    text-align: center;
+    border-radius: 28px 0 0 28px;
+  }
+
+  .ajuda {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-bottom: 40px;
+    color: var(--azul);
+    margin: 6rem;
+  }
+
+  .exames {
+    position: relative;
+    background-image: url('../img/klogo6.png');
+    background-position: center center;
+    background-size: 45%;
+  }
+
+
+  
+}

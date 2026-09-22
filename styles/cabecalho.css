@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cabecalho {
+    height: 100vh;
+}
+
+.fundo {
+    position: relative;
+    margin-left: -1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 25%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+
+.clinica {
+    position: absolute;
+    width: 98%; /* 100% - 6% da margin-left */
+    margin-left: 6%;
+    margin-top: -80%;
+    z-index: -1;
+}
+
+.destaque-hero {
+    color: var(--creme);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.titulo {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 5rem 3.5rem 2rem;
+    color: var(--azul);
+    font-weight: 100;
+}
+
+.botao {
+    font-size: 15px;
+}
+
+.botao a {
+    display: inline-block;
+    padding: 15px 10px;
+    background-color: var(--azul);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 1px 15px 15px;
+    margin-top: .8rem;
+    margin: 0 3.5rem;
+    font-size: 14px;
+}
+
+.quebra-desktop {
+  display: none;
+}
+
+
+@media screen and (min-width: 1020px)  {
+
+
+
+    .clinica {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 10%;
+        margin-top: 4.5rem;
+        margin-left: 7rem;
+    }
+
+    .cabecalho {
+        position: relative;
+        background-image: url('../img/fundo2.png');
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: 80%;
+    }
+
+    .titulo {
+        font-weight: 500px;
+        text-transform: none;
+        text-align: left;
+        /* "2rem" continua inválido aqui, troquei */
+        font-size: clamp(2.4rem, 1.5rem + 2vw, 3.5rem);
+        margin: 5rem 7.5rem 2rem;
+        color: var(--azul);
+    }
+
+    .destaque-hero {
+        font-size: clamp(2.4rem, 1.5rem + 2vw, 3.5rem);
+
+    }
+
+    .botao a {
+        margin: 1rem 7.5rem;
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+
+     .quebra-desktop {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .clinica {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo img {
+    width: 11%;
+    margin-top: 4rem;
+    margin-left: 5rem;
+  }
+
+  .cabecalho {
+    position: relative;
+    background-image: url('../img/fundo2.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 82%;
+  }
+
+  .titulo {
+    font-weight: 500px;
+    text-transform: none;
+    text-align: left;
+    font-size: clamp(2.2rem, 1.4rem + 2vw, 3rem);
+    margin: 4rem 5rem 2rem;
+    color: var(--azul);
+  }
+
+  .destaque-hero {
+    font-size: clamp(2.2rem, 1.4rem + 2vw, 3rem);
+  }
+
+  .botao a {
+    margin: 1rem 5rem;
+    padding: 18px 20px;
+    font-size: 18px;
+  }
+
+  .quebra-desktop {
+    display: block;
+  }
+}
+
+

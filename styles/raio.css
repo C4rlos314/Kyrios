@@ -1,0 +1,54 @@
+.imagem {
+
+    height: 100vh;
+    margin-top: 1rem;
+    background-image: url('../img/background-blur.png');
+}
+
+.r-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+}
+
+.quadrados {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 1rem;
+    width: 90%;
+    border-radius: 0 40px 40px 40px;
+}
+
+
+.exame-imagem {
+    display: flex;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 20px;
+}
+
+
+
+.botao-imagem {
+    display: block;
+    width: fit-content;
+    margin: 5rem auto;
+    padding: 15px 20px;
+    /* Aumentei o espaçamento lateral para o texto respirar melhor */
+    background-color: var(--branco);
+    color: var(--azul);
+    text-decoration: none;
+    border-radius: 1px 15px 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1020px) {
+    .imagem {
+        background-size: cover;
+
+        background-image: url('../img/backgound-blur-desk2.jpg');
+    }
+
+}
